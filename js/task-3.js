@@ -37,11 +37,7 @@ const users = [
 ];
 
 const sortByDescendingFriendCount = users => {
-  let sortedList = [];
-  sortedList.push(
-    users.toSorted((a, b) => b.friends.length - a.friends.length)
-  );
-  return sortedList;
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
 };
 
 console.log(sortByDescendingFriendCount(users));
